@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Entreprise Site Web</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body onload="init()">
+	<header>
+		<nav class="mainnav" id="mainnav">
+			<a href="#">MS</a>
+
+			<a href="#">Home</a>
+			<a href="#">Contact</a>
+			<a href="#">About Us</a>
+			<a href="#">Sign In</a>
+			<a href="#">Sign Up</a>
+
+			<a href="javascript:void(0);" class="icon" onclick="dropdownmenu()">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+					<rect fill="#FFFFFF" width="34" height="4"/>
+					<rect y="11" fill="#FFFFFF" width="34" height="4"/>
+					<rect y="23" fill="#FFFFFF" width="34" height="4"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+
+	<div id="slider">
+
+		<div id="ctnslide">
+			<div class="slide">
+				<img class="bg-slider" src="assets/sliders/slider1.jpg">
+				<div class="slide-content">
+					<h1>Bienvenue</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+					<img src="assets/img/chronopost.png" style="max-width: 400px;">
+				</div>
+			</div>
+			<div class="slide">
+				<img class="bg-slider" src="assets/sliders/slider2.jpg">
+				<div class="slide-content">
+					<h1>Expert dans la matière</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing at cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<img src="assets/img/audi-logo.png" style="max-width: 200px;">
+				</div>
+			</div>
+			<div class="slide">
+				<img class="bg-slider" src="assets/sliders/slider3.jpg">
+				<div class="slide-content">
+					<h1>Spécialiste dans l'architecture</h1>
+					<p>Lorem ipsum dolor sit amet, cons</p>
+					<img src="assets/img/logo.jpg" style="max-width: 200px;">
+				</div>
+			</div>
+		</div>
+
+		<a class="prev" id="btnprev" onclick="prevSlide()"></a>
+        <a id="btnnext" onclick="nextSlide()"></a>
+	</div>
+
+	<div class="block">
+		<div class="columncontainer-2">
+			<div class="col">
+				<h4>About Us</h4>
+				<h1>We Are The Leader in The Architectural</h1>
+			 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laborum quam eum quia voluptatibus ullam voluptate ipsam placeat labore autem ipsum debitis, consequatur dignissimos itaque deserunt, commodi eveniet ex laudantium.
+			 	Non iusto, atque inventore, voluptas at accusamus sequi unde odit cumque esse odio aut </p>
+			 	<a class="btn" href="#">DEMANDEZ UN DEVIS</a>
+			</div>
+			<div class="col">
+				<div class="justify-center">
+					<div class="card">
+						<img class="picbg" src="./assets/img/img1.jpeg"/>
+						<div class="details text-center">
+							<h1>Découvrez nos préstations</h1>
+							<a class="btn" href="#DECOUVRIR">DECOUVRIR</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	 	</div>
+	</div>
+
+	<div class="block">
+		<div class="menu">
+			<h1 class="title-big">Nos projets</h1>
+			<nav>
+				<a href="#">Billing</a>
+				<a href="#">Hot</a>
+				<a href="#">Best</a>
+			</nav>
+		</div>
+		<div class="columncontainer-4">
+			<div class="col">
+				<div class="card">
+					<img class="picbg" src="./assets/img/img3.jpg"/>
+					<div class="details">
+						<h3>Lorem ipsum is sipmply dummy text</h3>
+						<a class="btn" href="#img3">See Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="picbg" src="./assets/img/img2.jpeg"/>
+					<div class="details">
+						<h3>There is a very nice and cool way to make</h3>
+						<a class="btn" href="#img2">See Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="picbg" src="./assets/img/img3.jpg"/>
+					<div class="details">
+						<h3>You can hack around it by measuring</h3>
+						<a class="btn" href="#img3scsc">See Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="picbg" src="./assets/img/img2.jpeg"/>
+					<div class="details">
+						<h3>This answer is similar to others</h3>
+						<a class="btn" href="#img2">See Project</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="block">
+		<h1>From Great Our Clients</h1>
+		<div class="columncontainer-2">
+			<div class="col">
+				<div class="client">
+					<div class="pp">
+						<img src="assets/pp/img_avatar.png">
+					</div>
+					<div class="details">
+						<h4>George Floyd</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="client">
+					<div class="pp">
+						<img src="assets/pp/img_avatar2.png">
+					</div>
+					<div class="details">
+						<h4>George Floyd</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+					</div>
+				</div>
+			</div>
+	 	</div>
+
+	 	<div class="mark">
+	 		<ul class="mark">
+	 			<li>
+	 				<img src="assets/img/mark1.jpg">
+	 			</li>
+	 			<li>
+	 				<img src="assets/img/mark2.png">
+	 			</li>
+	 			<li>
+	 				<img src="assets/img/mark4.webp">
+	 			</li>
+	 			<li>
+	 				<img src="assets/img/audi-logo.png">
+	 			</li>
+	 			<li>
+	 				<img src="assets/img/chronopost.png">
+	 			</li>
+	 		</ul>
+	 	</div>
+
+	</div>
+
+	<div class="block">
+		<h1>Latest News</h1>
+		<div class="columncontainer-3">
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+			</div>
+	 	</div>
+	</div>
+
+	<div class="block">
+		<div class="columncontainer-2">
+			<div class="col">
+				<div class="justify-center">
+					<div class="card">
+						<img class="picbg" src="./assets/img/img4.jpg"/>
+						<div class="details details-vc text-center">
+							<h1>Découvrez nos préstations</h1>
+							<a class="btn" href="#préstations">DÉCOUVRIR</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<h4>About Us</h4>
+				<h1>We Are The Leader in The Architectural</h1>
+			 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laborum quam eum quia voluptatibus ullam voluptate ipsam placeat labore autem ipsum debitis, consequatur dignissimos itaque deserunt, commodi eveniet ex laudantium.
+			 	Non iusto, atque inventore, voluptas at accusamus sequi unde odit cumque esse odio aut </p>
+			 	<a class="btn" href="#">DEMANDEZ UN DEVIS</a>
+			</div>
+	 	</div>
+	</div>
+
+	<footer>
+		<div class="columncontainer-5">
+			<div class="col">
+				<h5>MS</h5>
+			</div>
+			<div class="col">
+				<ul>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+					<li>Element</li>
+				</ul>
+			</div>
+			<div class="col">
+				
+			</div>
+		</div>
+		<em>Copyright MS 2021</em>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+#slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    /* Full page */
+    overflow: hidden;
+    left:0; 
+    right:0; 
+    top:0; 
+    bottom:0;
+}
+#btnprev, #btnnext {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+
+    z-index: 999;
+}
+#btnprev {
+    left: 0;
+}
+#btnprev::after  {
+    content: "<";
+}
+#btnnext {
+    right: 0;
+}
+#btnnext::after {
+    content: ">";
+}
+
+#slider:hover #btnprev, #slider:hover #btnnext {
+    opacity: 0.5;
+}
+
+/* Slider responsive */
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Integration texte par dessus le slider current */
+#slide_scene {
+    color: rgba(255,255,255,0.87);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    padding-left: 150px;
+    width: 50%;
+
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+/* Animation */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Assuré la responsivité sur les petits ecran */
+@media only screen and (max-width: 768px) {
+    #btnprev, #btnnext {
+        font-size: 20px;
+    }
+
+    /* Positionement du texte du slider */
+    #slide_scene {
+        top: 2%;
+        left: 0;
+        width: 90%;
+        padding-left: 44px;
+    }
+
+    #slide_scene h1 {
+        margin-bottom: 0;
+    }
+    #slide_scene p {
+        padding-top: 0; 
+        font-size: 11px;
+    }
+}
