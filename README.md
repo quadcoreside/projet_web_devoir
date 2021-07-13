@@ -1,6 +1,6 @@
 # projet_web_devoir
-SISSOKO Moussa
-Projet programmation WEB
+- SISSOKO Moussa
+Projet programmation WEB.
 
 Features :
 - Animation CSS
